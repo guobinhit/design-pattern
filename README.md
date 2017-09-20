@@ -2,9 +2,13 @@
 
 Detail design pattern and give many demos of Java.
  
+## Index
+
+- [Singleton](#Singleton)
+- [Strategy](#Strategy)
 
 
-## Singleton Pattern
+## Singleton
 
 　　The singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. The concept is sometimes generalized to systems that operate more efficiently when only one object exists, or that restrict the instantiation to a certain number of objects. The term comes from the mathematical concept of a singleton.
 
@@ -24,9 +28,9 @@ The instance is usually stored as a private static variable; the instance is cre
 
 
 
-## Strategy Pattern
+## Strategy
 
-　　In computer programming, the strategy pattern (also known as the policy pattern) is a behavioural software design pattern that enables selecting an algorithm at runtime. The strategy pattern
+　　The strategy pattern (also known as the policy pattern) is a behavioural software design pattern that enables selecting an algorithm at runtime. The strategy pattern
 
 - defines a family of algorithms,
 - encapsulates each algorithm, and
