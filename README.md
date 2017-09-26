@@ -7,7 +7,7 @@ Detail design pattern and give many demos of Java.
 - [Singleton](#Singleton)
 - [Strategy](#Strategy)
 - [Observer](#Observer)
-
+- [Decorator](#Decorator)
 
 ## Singleton
 
@@ -63,9 +63,16 @@ Implementing algorithms directly within the class that requires them is inflexib
 Defining a one-to-many dependency between objects by defining one object (subject) that updates the state of dependent objects directly is inflexible because it commits (tightly couples) the subject to particular dependent objects and makes it impossible to change the objects (add new ones or remove existing ones) independently from (without having to change) the subject. This stops the subject from being reusable, and it makes the subject hard to test. Tightly coupled objects are hard to implement, change, test, and reuse because they refer to and know about many different objects.
 
 
+# Decorator
 
+　　The decorator pattern (also known as Wrapper, an alternative naming shared with the Adapter pattern) is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
 
+> What problems can the Decorator design pattern solve?
 
+- Responsibilities should be added to (and removed from) an object dynamically at run-time.
+- A flexible alternative to subclassing for extending functionality should be provided.
+
+When using subclassing, different subclasses extend a class in different ways. But an extension is bound to the class at compile-time and can't be changed at run-time.
 
 
 
