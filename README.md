@@ -8,6 +8,9 @@ Detail design pattern and give many demos of Java.
 - [Strategy](#Strategy)
 - [Observer](#Observer)
 - [Decorator](#Decorator)
+- [Adapter](#Adapter)
+
+
 
 ## Singleton
 
@@ -74,6 +77,24 @@ Defining a one-to-many dependency between objects by defining one object (subjec
 
 When using subclassing, different subclasses extend a class in different ways. But an extension is bound to the class at compile-time and can't be changed at run-time.
 
+# Adapter
+
+　　The adapter pattern is a software design pattern (also known as Wrapper, an alternative naming shared with the Decorator pattern) that allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code. An example is an adapter that converts the interface of a Document Object Model of an XML document into a tree structure that can be displayed.
+
+> The Adapter design pattern solves problems like:
+
+- How can a class be reused that does not have an interface that a client requires?
+- How can classes that have incompatible interfaces work together?
+- How can an alternative interface be provided for a class?
+
+Often an (already existing) class can't be reused only because its interface doesn't conform to the interface clients require.
+
+> The Adapter design pattern describes how to solve such problems:
+
+- Define a separate `Adapter` class that converts the (incompatible) interface of a class (`Adaptee`) into another interface (`Target`) clients require.
+- Work through an `Adapter` to work with (reuse) classes that do not have the required interface.
+
+The key idea in this pattern is to work through a separate Adapter that adapts the interface of an (already existing) class without changing it. Clients don't know whether they work with a `Target` class directly or through an `Adapter` with a class that has not the `Target` interface.
 
 
 
