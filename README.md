@@ -9,6 +9,7 @@ Detail design pattern and give many demos of Java.
 - [Observer](#Observer)
 - [Decorator](#Decorator)
 - [Adapter](#Adapter)
+- [Facade](#Facade)
 
 
 
@@ -96,7 +97,31 @@ Often an (already existing) class can't be reused only because its interface doe
 
 The key idea in this pattern is to work through a separate Adapter that adapts the interface of an (already existing) class without changing it. Clients don't know whether they work with a `Target` class directly or through an `Adapter` with a class that has not the `Target` interface.
 
+# Facade
 
+　　The facade pattern (also spelled façade) is a software design pattern commonly used with object-oriented programming. The name is an analogy to an architectural façade. A facade is an object that provides a simplified interface to a larger body of code, such as a class library. A facade can
+
+- make a software library easier to use, understand, and test, since the facade has convenient methods for common tasks,
+- make the library more readable, for the same reason,
+- reduce dependencies of outside code on the inner workings of a library, since most code uses the facade, thus allowing more flexibility in developing the system,
+- wrap a poorly designed collection of APIs with a single well-designed API.
+
+The Facade design pattern is often used when a system is very complex or difficult to understand because the system has a large number of interdependent classes or its source code is unavailable. This pattern hides the complexities of the larger system and provides a simpler interface to the client. It typically involves a single wrapper class that contains a set of members required by client. These members access the system on behalf of the facade client and hide the implementation details.
+
+> What problems can the Facade design pattern solve? 
+
+- To make a complex subsystem easier to use, a simple interface should be provided for a set of interfaces in the subsystem.
+The dependencies on a subsystem should be minimized.
+- Clients that access a complex subsystem directly refer to (depend on) many different objects having different interfaces (tight coupling), which makes the clients hard to implement, change, test, and reuse.
+
+> What solution does the Facade design pattern describe?
+
+Define a Facade object that
+
+- implements a simple interface in terms of (by delegating to) the interfaces in the subsystem and
+- may perform additional functionality before/after forwarding a request.
+
+This enables to work through a Facade object to minimize the dependencies on a subsystem.
 
 ----------
 
