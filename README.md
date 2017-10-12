@@ -10,6 +10,7 @@ Detail design pattern and give many demos of Java.
 - [Decorator](#Decorator)
 - [Adapter](#Adapter)
 - [Facade](#Facade)
+- [Builder](#Builder)
 
 
 
@@ -122,6 +123,24 @@ Define a Facade object that
 - may perform additional functionality before/after forwarding a request.
 
 This enables to work through a Facade object to minimize the dependencies on a subsystem.
+
+## Builder
+
+　　The builder pattern is an object creation software design pattern. Unlike the abstract factory pattern and the factory method pattern whose intention is to enable polymorphism, the intention of the builder pattern is to find a solution to the telescoping constructor anti-pattern that occurs when the increase of object constructor parameter combination leads to an exponential list of constructors. Instead of using numerous constructors, the builder pattern uses another object, a builder, that receives each initialization parameter step by step and then returns the resulting constructed object at once.
+
+> The Builder design pattern solves problems like: 
+
+- How can a class (the same construction process) create different representations of a complex object?
+- How can a class that includes creating a complex object be simplified?
+
+Creating and assembling the parts of a complex object directly within a class is inflexible. It commits the class to creating a particular representation of the complex object and makes it impossible to change the representation later independently from (without having to change) the class.
+
+> The Builder design pattern describes how to solve such problems:
+
+- Encapsulate creating and assembling the parts of a complex object in a separate `Builder` object.
+- A class delegates object creation to a `Builder` object instead of creating the objects directly.
+
+A class (the same construction process) can delegate to different `Builder` objects to create different representations of a complex object.
 
 ----------
 
