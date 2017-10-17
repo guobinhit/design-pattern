@@ -11,7 +11,7 @@ Detail design pattern and give many demos of Java.
 - [Adapter](#Adapter)
 - [Facade](#Facade)
 - [Builder](#Builder)
-- [Iterator(迭代器)](#Iterator(迭代器))
+- [Iterator](#Iterator)
 
 
 
@@ -144,7 +144,7 @@ Creating and assembling the parts of a complex object directly within a class is
 A class (the same construction process) can delegate to different `Builder` objects to create different representations of a complex object.
 
 
-## Iterator(迭代器)
+## Iterator
 
 　　The iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
 
