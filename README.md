@@ -1,3 +1,5 @@
+> **Notices**：If you want to read chinese `README`, please onclick [THERE](https://github.com/guobinhit/design-pattern/blob/master/README_CH.md). 
+
 # Design Pattern
 
 Detail design pattern and give many demos of Java.
