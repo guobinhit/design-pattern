@@ -6,14 +6,14 @@ Detail design pattern and give many demos of Java.
  
 ## Index
 
-- [Singleton](#Singleton)
-- [Strategy](#Strategy)
-- [Observer](#Observer)
-- [Decorator](#Decorator)
-- [Adapter](#Adapter)
-- [Facade](#Facade)
-- [Builder](#Builder)
-- [Iterator](#Iterator)
+- [Singleton](#singleton)
+- [Strategy](#strategy)
+- [Observer](#observer)
+- [Decorator](#decorator)
+- [Adapter](#adapter)
+- [Facade](#facade)
+- [Builder](#builder)
+- [Iterator](#iterator)
 
 
 
