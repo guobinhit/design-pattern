@@ -4,7 +4,7 @@ package com.hit.strategy;
  * author:Charies Gavin
  * date:2017/9/17,19:45
  * https:github.com/guobinhit
- * description:
+ * description:策略模式（抽象类）
  */
 public abstract  class Duck implements FlyBehavior, QuackBehavior {
     /**
