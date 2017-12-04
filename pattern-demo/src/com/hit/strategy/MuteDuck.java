@@ -16,16 +16,6 @@ public class MuteDuck extends Duck {
     }
 
     @Override
-    public void quack() {
-
-    }
-
-    @Override
-    public void fly() {
-
-    }
-
-    @Override
     public void display() {
         System.out.println("I'm not a real Duck!");
     }

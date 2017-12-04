@@ -22,16 +22,27 @@ public class MiniDuckSimulator {
         /**
          * 循环
          */
-        for(Duck duck : duckList){
+        for (Duck duck : duckList) {
             MiniDuckSimulator.duckGoGO(duck);
         }
+
+        System.out.println("----- 动态修改 Duck 的行为 -----");
+
+        /**
+         * 创建 ModelDuck，动态修改 ModelDuck 的行为
+         */
+        Duck modelDuck = new ModelDuck();
+        modelDuck.performFly();
+        modelDuck.setFlyBehavior(new FlyWithWings());
+        modelDuck.performFly();
     }
 
     /**
      * 封装 Duck 行为
+     *
      * @param duck
      */
-    private static void duckGoGO(Duck duck){
+    private static void duckGoGO(Duck duck) {
         duck.performQuack();
         duck.performFly();
         duck.swim();
