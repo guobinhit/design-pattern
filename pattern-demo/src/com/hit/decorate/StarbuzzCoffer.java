@@ -4,7 +4,7 @@ package com.hit.decorate;
  * author:Charies Gavin
  * date:2017/10/21,16:01
  * https:github.com/guobinhit
- * description:
+ * description:装饰模式（咖啡店测试类）
  */
 public class StarbuzzCoffer {
     public static void main(String[] args) {
