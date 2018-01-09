@@ -8,6 +8,11 @@ package com.hit.decorate;
  */
 public class StarbuzzCoffer {
     public static void main(String[] args) {
+        /**
+         * 装饰模式：
+         * 缺点，子类比较多，繁杂；
+         * 优点，组合方便，使用灵活。
+         */
         Beverage beverage = new Espresso();
         System.out.println(beverage.getDescription()
                 + " $" + beverage.cost());
