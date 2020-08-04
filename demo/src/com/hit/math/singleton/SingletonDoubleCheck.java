@@ -7,6 +7,7 @@ package com.hit.math.singleton;
  * description:单例模式（多重检查加锁，可用于多线程）
  */
 public class SingletonDoubleCheck {
+    
     /**
      * volatile 关键字确保当 uniqueInstance 变量被初始化为 SingletonDoubleCheck 实例时，
      * 多个线程正确地处理 uniqueInstance 变量

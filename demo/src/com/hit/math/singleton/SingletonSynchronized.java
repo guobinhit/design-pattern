@@ -7,6 +7,10 @@ package com.hit.math.singleton;
  * description:单例模式（增加 synchronized 同步关键字，可用于多线程）
  */
 public class SingletonSynchronized {
+
+    /**
+     * 定义单例全局变量
+     */
     private static SingletonSynchronized uniqueInstance;
 
     /**

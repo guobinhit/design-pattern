@@ -7,6 +7,10 @@ package com.hit.math.singleton;
  * description:经典单例模式（延迟实例化）
  */
 public class Singleton {
+
+    /**
+     * 定义单例全局变量
+     */
     private static Singleton uniqueInstance;
 
     /**
@@ -24,6 +28,6 @@ public class Singleton {
         if (uniqueInstance == null) {
             uniqueInstance = new Singleton();
         }
-        return new Singleton();
+        return uniqueInstance;
     }
 }

@@ -7,6 +7,10 @@ package com.hit.math.singleton;
  * description:单例模式（急切实例化）
  */
 public class SingletonVariant {
+
+    /**
+     * 定义单例全局变量
+     */
     private static SingletonVariant uniqueInstance = new SingletonVariant();
 
     /**
