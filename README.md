@@ -3,7 +3,10 @@
 # Design Pattern
 
 Detail design pattern and give many demos of Java.
- 
+
+![author](https://img.shields.io/badge/author-chariesgavin-blueviolet.svg)![last commit](https://img.shields.io/github/last-commit/guobinhit/design-pattern.svg)![issues](https://img.shields.io/github/issues/guobinhit/design-pattern.svg)![stars](https://img.shields.io/github/stars/guobinhit/design-pattern.svg)![forks](https://img.shields.io/github/forks/guobinhit/design-pattern.svg)![license](https://img.shields.io/github/license/guobinhit/design-pattern.svg)
+
+
 ## Index
 
 - [Singleton](#singleton)
