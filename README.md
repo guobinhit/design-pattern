@@ -1,4 +1,4 @@
-> **Notices**：If you want to read chinese `README`, please onclick [THERE](https://github.com/guobinhit/design-pattern/blob/master/README_CH.md). 
+> **注意**：如果你想要确定中文版`README`, 请点击[这里](https://github.com/guobinhit/design-pattern/blob/master/README_CH.md). 
 
 # Design Pattern
 
@@ -22,7 +22,7 @@ Detail design pattern and give many demos of Java.
 
 ## Singleton
 
-　　The singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. The concept is sometimes generalized to systems that operate more efficiently when only one object exists, or that restrict the instantiation to a certain number of objects. The term comes from the mathematical concept of a singleton. An implementation of the singleton pattern must:
+The singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. The concept is sometimes generalized to systems that operate more efficiently when only one object exists, or that restrict the instantiation to a certain number of objects. The term comes from the mathematical concept of a singleton. An implementation of the singleton pattern must:
 
 - ensure that only one instance of the singleton class ever exists; and
 - provide global access to that instance.
@@ -45,13 +45,13 @@ The instance is usually stored as a private static variable; the instance is cre
 
 ## Strategy
 
-　　The strategy pattern (also known as the policy pattern) is a behavioural software design pattern that enables selecting an algorithm at runtime. The strategy pattern
+The strategy pattern (also known as the policy pattern) is a behavioural software design pattern that enables selecting an algorithm at runtime. The strategy pattern
 
 - defines a family of algorithms,
 - encapsulates each algorithm, and
 - makes the algorithms interchangeable within that family.
 
-　　For instance, a class that performs validation on incoming data may use the Strategy pattern to select a validation algorithm depending on the type of data, the source of the data, user choice, or other discriminating factors. These factors are not known until run-time and may require radically different validation to be performed. The validation algorithms (strategies), encapsulated separately from the validating object, may be used by other validating objects in different areas of the system (or even different systems) without code duplication.
+For instance, a class that performs validation on incoming data may use the Strategy pattern to select a validation algorithm depending on the type of data, the source of the data, user choice, or other discriminating factors. These factors are not known until run-time and may require radically different validation to be performed. The validation algorithms (strategies), encapsulated separately from the validating object, may be used by other validating objects in different areas of the system (or even different systems) without code duplication.
 
 > The Strategy design pattern solves problems like:
 
@@ -63,7 +63,7 @@ Implementing algorithms directly within the class that requires them is inflexib
 
 ## Observer
 
-　　The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
+The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
 
 > The Observer design pattern solves problems like:
 
@@ -76,7 +76,7 @@ Defining a one-to-many dependency between objects by defining one object (subjec
 
 # Decorator
 
-　　The decorator pattern (also known as Wrapper, an alternative naming shared with the Adapter pattern) is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
+The decorator pattern (also known as Wrapper, an alternative naming shared with the Adapter pattern) is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
 
 > What problems can the Decorator design pattern solve?
 
@@ -87,7 +87,7 @@ When using subclassing, different subclasses extend a class in different ways. B
 
 # Adapter
 
-　　The adapter pattern is a software design pattern (also known as Wrapper, an alternative naming shared with the Decorator pattern) that allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code. An example is an adapter that converts the interface of a Document Object Model of an XML document into a tree structure that can be displayed.
+The adapter pattern is a software design pattern (also known as Wrapper, an alternative naming shared with the Decorator pattern) that allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code. An example is an adapter that converts the interface of a Document Object Model of an XML document into a tree structure that can be displayed.
 
 > The Adapter design pattern solves problems like:
 
@@ -106,7 +106,7 @@ The key idea in this pattern is to work through a separate Adapter that adapts t
 
 # Facade
 
-　　The facade pattern (also spelled façade) is a software design pattern commonly used with object-oriented programming. The name is an analogy to an architectural façade. A facade is an object that provides a simplified interface to a larger body of code, such as a class library. A facade can
+The facade pattern (also spelled façade) is a software design pattern commonly used with object-oriented programming. The name is an analogy to an architectural façade. A facade is an object that provides a simplified interface to a larger body of code, such as a class library. A facade can
 
 - make a software library easier to use, understand, and test, since the facade has convenient methods for common tasks,
 - make the library more readable, for the same reason,
@@ -132,7 +132,7 @@ This enables to work through a Facade object to minimize the dependencies on a s
 
 ## Builder
 
-　　The builder pattern is an object creation software design pattern. Unlike the abstract factory pattern and the factory method pattern whose intention is to enable polymorphism, the intention of the builder pattern is to find a solution to the telescoping constructor anti-pattern that occurs when the increase of object constructor parameter combination leads to an exponential list of constructors. Instead of using numerous constructors, the builder pattern uses another object, a builder, that receives each initialization parameter step by step and then returns the resulting constructed object at once.
+The builder pattern is an object creation software design pattern. Unlike the abstract factory pattern and the factory method pattern whose intention is to enable polymorphism, the intention of the builder pattern is to find a solution to the telescoping constructor anti-pattern that occurs when the increase of object constructor parameter combination leads to an exponential list of constructors. Instead of using numerous constructors, the builder pattern uses another object, a builder, that receives each initialization parameter step by step and then returns the resulting constructed object at once.
 
 > The Builder design pattern solves problems like: 
 
@@ -151,7 +151,7 @@ A class (the same construction process) can delegate to different `Builder` obje
 
 ## Iterator
 
-　　The iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
+The iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
 
 > What problems can the Iterator design pattern solve?
 
