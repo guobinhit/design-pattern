@@ -7,5 +7,5 @@ package com.hit.math.observer.mime;
  * description:观察者模式(观察者接口)
  */
 public interface Observer {
-    public void update(float temperature, float humidity, float pressure);
+    void update(float temperature, float humidity, float pressure);
 }

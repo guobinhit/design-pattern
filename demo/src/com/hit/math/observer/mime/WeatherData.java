@@ -8,8 +8,8 @@ import java.util.ArrayList;
  * https:github.com/guobinhit
  * description:观察者模式(实现了主题接口)
  */
-public class WeatherDate implements Subject {
-    private ArrayList observers;
+public class WeatherData implements Subject {
+    private ArrayList<Observer> observers;
     private float temperature;
     private float humidity;
     private float pressure;
@@ -17,11 +17,11 @@ public class WeatherDate implements Subject {
     /**
      * 默认构造器
      */
-    public WeatherDate() {
+    public WeatherData() {
         /**
          * 创建观察者列表
          */
-        observers = new ArrayList();
+        observers = new ArrayList<>();
     }
 
     @Override
@@ -39,9 +39,9 @@ public class WeatherDate implements Subject {
 
     @Override
     public void notifyObservers() {
-        for (int i = 0; i < observers.size(); i++) {
-            Observer observer = (Observer) observers.get(i);
+        for (Observer observer : observers) {
             observer.update(temperature, humidity, pressure);
+            System.out.println("observer of " + observer + " be updated.");
         }
     }
 
@@ -54,6 +54,7 @@ public class WeatherDate implements Subject {
 
     /**
      * 设置气象观测数据
+     *
      * @param temperature
      * @param humidity
      * @param pressure

@@ -8,7 +8,7 @@ import java.util.Observable;
  * https:github.com/guobinhit
  * description:观察者模式(继承了 Java 内置的 Observable 类)
  */
-public class WeatherDateApi extends Observable {
+public class WeatherDataApi extends Observable {
     private float temperature;
     private float humidity;
     private float pressure;
@@ -16,7 +16,7 @@ public class WeatherDateApi extends Observable {
     /**
      * 默认构造器
      */
-    public WeatherDateApi() {
+    public WeatherDataApi() {
     }
 
     public void measurementsChanged() {
@@ -24,6 +24,7 @@ public class WeatherDateApi extends Observable {
          * 调用 setChanged() 标记状态已经改变的事实
          */
         setChanged();
+
         /**
          * 注意：Observable 内置的通知观察者方法有两个版本，分别为
          *  1）notifyObservers()

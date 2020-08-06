@@ -10,19 +10,19 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
     private float humidity;
     private float pressure;
-    private Subject weatherDate;
 
     /**
      * 有参构造器，通过 Subject 类型的参数注册为观察者
-     * @param weatherDate
+     *
+     * @param weatherData 主题数据
      */
-    public CurrentConditionsDisplay(Subject weatherDate) {
-        this.weatherDate = weatherDate;
-        weatherDate.registerObserver(this);
+    public CurrentConditionsDisplay(Subject weatherData) {
+        weatherData.registerObserver(this);
     }
 
     /**
      * 覆盖 Observer 中的 update() 方法
+     *
      * @param temperature
      * @param humidity
      * @param pressure

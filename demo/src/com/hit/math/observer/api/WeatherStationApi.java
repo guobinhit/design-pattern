@@ -8,7 +8,7 @@ package com.hit.math.observer.api;
  */
 public class WeatherStationApi {
     public static void main(String[] args) {
-        WeatherDateApi weatherDate = new WeatherDateApi();
+        WeatherDataApi weatherDate = new WeatherDataApi();
         CurrentConditionsDisplayApi conditionsDisplay = new CurrentConditionsDisplayApi(weatherDate);
         // 展示初始化布告板
         conditionsDisplay.display();

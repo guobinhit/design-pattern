@@ -13,7 +13,6 @@ import java.util.Observer;
  * description:观察者模式(实现了 Java 内置的 Observer 接口以及我们自定义的展示接口)
  */
 public class CurrentConditionsDisplayApi implements Observer, DisplayElement {
-    private Observable observable;
     private float temperature;
     private float humidity;
     private float pressure;
@@ -24,7 +23,6 @@ public class CurrentConditionsDisplayApi implements Observer, DisplayElement {
      * @param observable
      */
     public CurrentConditionsDisplayApi(Observable observable) {
-        this.observable = observable;
         observable.addObserver(this);
     }
 
@@ -32,13 +30,13 @@ public class CurrentConditionsDisplayApi implements Observer, DisplayElement {
      * 覆盖 Observer 接口中的 update() 方法
      * 其中 obs 表示实现了可观察者的类，arg 则为传递给观察者的数据对象，可以为 null
      *
-     * @param obs
-     * @param arg
+     * @param obs 可观察者实现类
+     * @param arg 传递给观察者的数据对象
      */
     @Override
     public void update(Observable obs, Object arg) {
-        if (obs instanceof WeatherDateApi) {
-            WeatherDateApi weatherDate = (WeatherDateApi) obs;
+        if (obs instanceof WeatherDataApi) {
+            WeatherDataApi weatherDate = (WeatherDataApi) obs;
             this.temperature = weatherDate.getTemperature();
             this.humidity = weatherDate.getHumidity();
             this.pressure = weatherDate.getPressure();

@@ -6,7 +6,7 @@ import com.hit.math.decorate.*;
  * author:Charies Gavin
  * date:2020/8/6, 22:50
  * https://github.com/guobinhit
- * description:策略模式
+ * description:装饰模式
  */
 public class DecorateTest {
     public static void main(String[] args) {
