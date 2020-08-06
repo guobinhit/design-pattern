@@ -1,4 +1,4 @@
-package com.hit.math.singletion;
+package com.hit.math.pattern;
 
 import com.hit.math.singleton.Singleton;
 import com.hit.math.singleton.SingletonDoubleCheck;
@@ -7,9 +7,9 @@ import com.hit.math.singleton.SingletonVariant;
 
 /**
  * author:Charies Gavin
- * date:2020/8/4, 20:00
+ * date:2020/8/4, 23:00
  * https://github.com/guobinhit
- * description:单例模式（急切实例化）
+ * description:单例模式
  */
 public class SingletonTest {
     public static void main(String[] args) {

@@ -7,6 +7,7 @@ package com.hit.math.strategy;
  * description:策略模式（接口实现类）
  */
 public class FlyNoWay implements FlyBehavior {
+
     @Override
     public void fly() {
         System.out.println("I don't know how to fly!");

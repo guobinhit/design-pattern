@@ -7,6 +7,7 @@ package com.hit.math.strategy;
  * description:策略模式（接口实现类）
  */
 public class FlyWithWings implements FlyBehavior {
+
     @Override
     public void fly() {
         System.out.println("I'm flying with wings!");

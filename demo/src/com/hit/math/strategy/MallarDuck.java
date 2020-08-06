@@ -7,6 +7,7 @@ package com.hit.math.strategy;
  * description:策略模式（抽象类 Duck 的具体实现类）
  */
 public class MallarDuck extends Duck {
+
     /**
      * 通过无参的构造器，对行为进行初始化
      */

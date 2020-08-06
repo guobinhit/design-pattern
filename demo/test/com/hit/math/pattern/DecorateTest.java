@@ -1,12 +1,14 @@
-package com.hit.math.decorate;
+package com.hit.math.pattern;
+
+import com.hit.math.decorate.*;
 
 /**
  * author:Charies Gavin
- * date:2017/10/21,16:01
- * https:github.com/guobinhit
- * description:装饰模式（咖啡店测试类）
+ * date:2020/8/6, 22:50
+ * https://github.com/guobinhit
+ * description:策略模式
  */
-public class StarbuzzCoffer {
+public class DecorateTest {
     public static void main(String[] args) {
         /**
          * 装饰模式：
@@ -26,5 +28,9 @@ public class StarbuzzCoffer {
         beverage3 = new Soy(beverage3);
         beverage3 = new Whip(beverage3);
         System.out.println(beverage3.getDescription() + " $" + beverage3.cost());
+
+        Beverage beverage4 = new DarkRoast();
+        beverage4 = new Whip(beverage4);
+        System.out.println(beverage4.getDescription() + " $" + beverage4.cost());
     }
 }

@@ -7,6 +7,7 @@ package com.hit.math.strategy;
  * description:策略模式（抽象类）
  */
 public abstract class Duck {
+
     /**
      * 多用组合，少用继承，增加代码灵活性
      */
@@ -41,7 +42,8 @@ public abstract class Duck {
 
     /**
      * 动态设置鸭子的 FlyBehavior
-     * @param fb
+     *
+     * @param fb FlyBehavior 实现类
      */
     public void setFlyBehavior(FlyBehavior fb) {
         this.flyBehavior = fb;
@@ -49,7 +51,8 @@ public abstract class Duck {
 
     /**
      * 动态设置鸭子的 QuackBehavior
-     * @param qb
+     *
+     * @param qb QuackBehavior 实现类
      */
     public void setQuackBehavior(QuackBehavior qb) {
         this.quackBehavior = qb;

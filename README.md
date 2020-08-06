@@ -1,4 +1,4 @@
-> **注意**：如果你想要确定中文版`README`, 请点击[这里](https://github.com/guobinhit/design-pattern/blob/master/README_CH.md). 
+> **Notices**：If you want to read chinese `README`, please onclick [THERE](https://github.com/guobinhit/design-pattern/blob/master/README_CH.md). 
 
 # Design Pattern
 
@@ -11,8 +11,8 @@ Detail design pattern and give many demos of Java.
 
 - [Singleton](#singleton)
 - [Strategy](#strategy)
-- [Observer](#observer)
 - [Decorator](#decorator)
+- [Observer](#observer)
 - [Adapter](#adapter)
 - [Facade](#facade)
 - [Builder](#builder)
@@ -42,7 +42,6 @@ Typically, this is done by:
 The instance is usually stored as a private static variable; the instance is created when the variable is initialized, at some point before the static method is first called.
 
 
-
 ## Strategy
 
 The strategy pattern (also known as the policy pattern) is a behavioural software design pattern that enables selecting an algorithm at runtime. The strategy pattern
@@ -61,6 +60,19 @@ For instance, a class that performs validation on incoming data may use the Stra
 
 Implementing algorithms directly within the class that requires them is inflexible because it commits the class to particular algorithms and makes it impossible to change an algorithm later independently from (without having to change) the class. This stops the class from being reusable if other algorithms are required. But Strategy Pattern makes a class independent of how an algorithm is implemented.
 
+
+## Decorator
+
+The decorator pattern (also known as Wrapper, an alternative naming shared with the Adapter pattern) is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
+
+> What problems can the Decorator design pattern solve?
+
+- Responsibilities should be added to (and removed from) an object dynamically at run-time.
+- A flexible alternative to subclassing for extending functionality should be provided.
+
+When using subclassing, different subclasses extend a class in different ways. But an extension is bound to the class at compile-time and can't be changed at run-time.
+
+
 ## Observer
 
 The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
@@ -73,17 +85,6 @@ The observer pattern is a software design pattern in which an object, called the
 
 Defining a one-to-many dependency between objects by defining one object (subject) that updates the state of dependent objects directly is inflexible because it commits (tightly couples) the subject to particular dependent objects and makes it impossible to change the objects (add new ones or remove existing ones) independently from (without having to change) the subject. This stops the subject from being reusable, and it makes the subject hard to test. Tightly coupled objects are hard to implement, change, test, and reuse because they refer to and know about many different objects.
 
-
-# Decorator
-
-The decorator pattern (also known as Wrapper, an alternative naming shared with the Adapter pattern) is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
-
-> What problems can the Decorator design pattern solve?
-
-- Responsibilities should be added to (and removed from) an object dynamically at run-time.
-- A flexible alternative to subclassing for extending functionality should be provided.
-
-When using subclassing, different subclasses extend a class in different ways. But an extension is bound to the class at compile-time and can't be changed at run-time.
 
 # Adapter
 

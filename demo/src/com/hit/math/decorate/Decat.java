@@ -7,6 +7,7 @@ package com.hit.math.decorate;
  * description:装饰模式
  */
 public class Decat extends Beverage {
+
     public Decat() {
         description = "Dacat";
     }

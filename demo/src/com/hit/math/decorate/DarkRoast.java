@@ -7,6 +7,7 @@ package com.hit.math.decorate;
  * description:装饰模式
  */
 public class DarkRoast extends Beverage {
+
     public DarkRoast() {
         description = "Dark Roast Coffer";
     }

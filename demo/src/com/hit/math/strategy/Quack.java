@@ -7,6 +7,7 @@ package com.hit.math.strategy;
  * description:策略模式（接口实现类）
  */
 public class Quack implements QuackBehavior {
+
     @Override
     public void quack() {
         System.out.println("Quack, quack, quack...");
