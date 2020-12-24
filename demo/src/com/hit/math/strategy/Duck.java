@@ -14,7 +14,6 @@ public abstract class Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
-
     /**
      * 无参构造器，也可以称之为默认构造器
      */

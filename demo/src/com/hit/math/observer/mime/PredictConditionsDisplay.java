@@ -1,23 +1,29 @@
 package com.hit.math.observer.mime;
 
+import java.util.Random;
+
 /**
  * author:Charies Gavin
- * date:2017/10/18,23:12
+ * date:2020/12/24,23:12
  * https:github.com/guobinhit
  * description:观察者模式(实现了观察者接口和展示接口)
  */
-public class CurrentConditionsDisplay implements Observer, DisplayElement {
+public class PredictConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
     private float humidity;
     private float pressure;
+
+    // 随机数
+    private Random random;
 
     /**
      * 有参构造器，通过 Subject 类型的参数注册为观察者
      *
      * @param weatherData 主题数据
      */
-    public CurrentConditionsDisplay(Subject weatherData) {
+    public PredictConditionsDisplay(Subject weatherData) {
         weatherData.registerObserver(this);
+        random = new Random(47);
     }
 
     /**
@@ -29,9 +35,9 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
      */
     @Override
     public void update(float temperature, float humidity, float pressure) {
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.pressure = pressure;
+        this.temperature = temperature + random.nextInt(10);
+        this.humidity = humidity + random.nextInt(10);
+        this.pressure = pressure + random.nextInt(10);
         display();
     }
 
@@ -40,12 +46,12 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
      */
     @Override
     public void display() {
-        System.out.println("Current conditions: " + temperature +
+        System.out.println("Predict conditions: " + temperature +
                 "F degrees and " + humidity + "% humidity and " + pressure + "Pa Pressure!");
     }
 
     @Override
     public String toString() {
-        return "CurrentConditionsDisplay";
+        return "PredictConditionsDisplay";
     }
 }

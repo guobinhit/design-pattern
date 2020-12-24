@@ -19,6 +19,7 @@ public class MiniDuckSimulator {
         List<Duck> duckList = new ArrayList<>();
         duckList.add(mallarDuck);
         duckList.add(muteDuck);
+
         /**
          * 循环
          */

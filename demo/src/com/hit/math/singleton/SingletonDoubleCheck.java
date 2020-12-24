@@ -21,7 +21,8 @@ public class SingletonDoubleCheck {
     }
 
     /**
-     * 提供获取实例的公共静态方法。
+     * 提供获取实例的公共静态方法
+     * <p>
      * 检查实例时，如果不存在，就进入同步块，同步块的锁为 SingletonDoubleCheck.class
      *
      * @return SingletonDoubleCheck
